@@ -561,7 +561,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .profile {
   margin-top: 3.5rem;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .profile .profile-content {
   width: 50%;
