@@ -562,6 +562,8 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 3.5rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 .profile .profile-content {
   width: 50%;
@@ -597,7 +599,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #d5d5d5;
 }
 .profile .profile-image {
-  width: 50%;
+  display: none;
 }
 @media (max-width: 480px) {
   .profile {
