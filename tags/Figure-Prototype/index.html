@@ -48,6 +48,24 @@
 
 
 
+<!-- 防止图片右键保存与拖动保存 -->
+<style>
+    img {
+        -webkit-user-drag: none;
+        user-drag: none;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('img').forEach(function (img) {
+            img.addEventListener('contextmenu', function (e) {
+                e.preventDefault(); // 禁止右键菜单
+            });
+            img.setAttribute('draggable', 'false'); // 禁止拖动图片
+        });
+    });
+</script>
 
 
   <meta name="generator" content="Hexo 7.3.0"></head>
